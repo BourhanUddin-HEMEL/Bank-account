@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome to Your bap-er-Bank</title>
+  </head>
+  <body >
+        <section class="bg-slate-900 h-screen w-full">
+             <h1 class="text-5xl text-white font-semibold text-center pt-6">
+            let's get some
+            <span class="font-bold text-amber-700">Mooney !! </span>
+            </h1>
+            <div class="flex justify-center mt-16  items-center gap-x-8">
+                        <div class="h-32 w-72 bg-emerald-600 rounded-lg ">
+                            <h4 class="font-semibold text-white text-3xl pl-8 pt-6">Deposit</h1>
+                            <p class="font-semibold text-white text-3xl pl-8 pt-2">$<span id="deposit-total">00</span></p>
+                        </div>
+                        <div class="h-32 w-72 bg-pink-500  rounded-lg ">
+                            <h4 class="font-semibold text-white text-3xl pl-8 pt-6">Withdraw</h1>
+                            <p class="font-semibold text-white text-3xl pl-8 pt-2">$<span id="withdraw-total">00</span></p>
+                        </div>
+                        <div class="h-32 w-72 bg-rose-700 rounded-lg ">
+                            <h4 class="font-semibold text-white text-3xl pl-8 pt-6">Balance</h1>
+                            <p class="font-semibold text-white text-3xl pl-8 pt-2">$<span id="balance-total">1000</span></p>
+                        </div>
+            </div>
+            <div class="flex pt-16 gap-x-8 justify-center items-center">
+                <div class=" h-56 w-4/12 bg-teal-500 rounded-lg">
+                    <h3 class="text-3xl text-white font-semibold pl-8 pt-8">Please Deposit </h3>
+                    <input class=" py-2 block ml-12 mt-5 pl-2 w-3/4 rounded-lg" placeholder="$ amount you want to deposit "  type="" name="" id="deposit-field">
+
+                    <button id="btn-deposit" class="rounded-lg bg-violet-900 px-12 ml-12 py-3 mt-4 text-white font-semibold shadow-lg hover:bg-sky-700"  > Deposit</button>
+                </div>
+                <div class="h-56 w-4/12 bg-violet-500 rounded-lg">
+                    <h3 class="text-3xl text-white font-semibold pl-8 pt-8">Please Withdraw </h3>
+                    <input class="py-2 block ml-12 mt-5 px-2 w-3/4 rounded-lg" placeholder="$ amount you want to withdraw"  type="" name="" id="withdraw-field">
+
+                    <button id="btn-withdraw" class="rounded-lg bg-violet-900 px-12 py-3 ml-12 mt-4 text-white font-semibold shadow-lg hover:bg-sky-700"> Withdraw</button>
+                </div>
+            </div>
+        </section>
+    <script src="js/bank.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>

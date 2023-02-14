@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank account</title>
+  </head>
+  <body class=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-96 w-full">
+    <header class="my-6">
+      <h1 class="text-5xl font-semibold text-center pt-6">
+        Welcome to your
+        <span class="font-bold text-white ">baper bank !! </span>
+      </h1>
+    <main class="mt-24">
+        <section class="h-64 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-700 rounded-lg mx-64 text-center ">
+                    <h2 class="my-4 text-3xl text-white font-semibold pt-5">  Please login  </h2>
+                    <div class="">
+                        <input class=" peer py-2 block mx-auto mb-3 px-2 w-1/2 rounded-lg" placeholder="Your Email address " type="email"   name=""  id="user-email"  />
+                        <p class="py-0 invisible peer-invalid:visible text-pink-600 text-sm">
+                            Please provide a valid email address.
+                        </p>
+
+                        <input type="password" class="py-2 px-2 w-1/2 rounded-lg" placeholder=" Your password" name=""id="user-password" />
+                
+                        <div class="">
+                            <button id="btn-submit" class="rounded-full bg-emerald-300 px-12 py-2 mt-3 font-semibold shadow-lg hover:bg-sky-700"  > login
+                            </button>
+                        </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/bank.js"></script>
+  </body>
+</html>
